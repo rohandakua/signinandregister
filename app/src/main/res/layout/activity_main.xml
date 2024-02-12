@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundgradient"
+    >
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Register"
+        android:textColor="#EAD1D1"
+        android:textSize="55dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="214dp"
+        android:layout_height="69dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Here"
+        android:textColor="#EAD1D1"
+        android:textSize="45dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/til1"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:background="@android:color/transparent"
+        android:text="Sign In "
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        app:layout_constraintLeft_toRightOf="@+id/tv1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.146"></Button>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til1"
+        android:layout_width="323dp"
+        android:layout_height="87dp"
+        android:background="@drawable/box"
+        android:fontFamily="sans-serif-thin"
+        android:padding="10dp"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/til2"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:startIconDrawable="@drawable/baseline_person_outline_24"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet1"
+            android:layout_width="301dp"
+            android:layout_height="54dp"
+            android:fontFamily="sans-serif-thin"
+            android:hint="Name"
+
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til2"
+        android:layout_width="323dp"
+        android:layout_height="87dp"
+        android:background="@drawable/box"
+        android:fontFamily="sans-serif-thin"
+        android:padding="10dp"
+
+        app:helperTextTextColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/til3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til1"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet2"
+            android:layout_width="301dp"
+            android:layout_height="54dp"
+            android:fontFamily="sans-serif-thin"
+            android:hint="Unique ID"
+
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til3"
+        android:layout_width="323dp"
+        android:layout_height="87dp"
+        android:background="@drawable/box"
+        android:fontFamily="sans-serif-thin"
+        android:padding="10dp"
+        app:endIconMode="password_toggle"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til2"
+        app:startIconDrawable="@drawable/baseline_password_24"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet3"
+            android:layout_width="301dp"
+            android:layout_height="54dp"
+            android:fontFamily="sans-serif-thin"
+            android:hint="Password"
+            android:inputType="text"
+
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:text="Register"
+        android:textSize="30dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/til3"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "520388923931",
+    "project_id": "sign-in-and-register-4e829",
+    "storage_bucket": "sign-in-and-register-4e829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520388923931:android:bbd0a9ba410837ad051ebe",
+        "android_client_info": {
+          "package_name": "com.example.signinandregister"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPUQb8eTa_3XhVZu-mNTm-d97lZAX2lc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
